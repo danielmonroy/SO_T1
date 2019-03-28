@@ -1,0 +1,38 @@
+López Monroy Luis Daniel
+Cuenta: 311313750
+
+1. Diferencias entre Java y C
+
+-La principal diferencia es el paradigma de programación de cada lenguaje: C pertenece al tipo de programación imperativa, ya que está hecho para programar principalmente algoritmos y dar instrucciones directas al procesador. Por otro lado, Java pertenece al tipo de programación orientado a objetos, ya que encapsula elementos en objeto que incluyen funciones y variables.
+
+-En C existen apuntadores que permiten al programador recorrer la memoria física de una computadora. Java no tiene apuntadores, todos los objetos pueden ser accedidos por medio de referencias.
+
+-En C, la liberación de memoria es responsabilidad del programador. En Java existe un "recolector de basura", el cual destruye cada cierto tiempo los objetos que se han quedado sin referencias de manera automática.
+
+
+-En C, el programador tiene control del procesador. En Java el programa se ejecuta sobre un procesador virtual (JVM) que abstrae al programador de la plataforma concreta.
+
+
+2. Preprocesador 
+
+El preprocesador es el primero de los programas invocados por el compilador
+Utiliza 4 etapas denominadas Fases de Traducción:
+
+-Tokenizado léxico: Se reemplaza la secuencia de trigrafos por los caracteres que representan.
+-Empalmado de líneas: Las líneas de código que continúan con secuencias de escape de nueva línea se unen para formar líneas lógicas.
+-Tokenización: Se reemplazan los comentarios por espacios en blanco y se dividen cada uno de los elementos a preprocesar.
+-Gestión de directivas: Se ejecutan las directivas de preprocesado incluyendo las que incluyen otros archivos y las de compilación condicional. También expande los macros.
+
+
+3. Correcto o incorrecto
+
+a) Es correcto, C intentará obtener el valor entero del tipo char, así la operación puede resolverse. Además regresa 0.
+
+b) Incorrecto, porque VARIABLE es una constante y tratamos de asignar VARIABLE = 1.
+
+c) Incorrecto, ya que la función eq debe ser declarada antes de main()
+
+
+4. Errores en Preprocesador y Compilador
+
+Mostrará un error en el compilador, ya que no encuentra la definición de PI. Se tiene que definir _MIMACRO_ antes de #ifdef
